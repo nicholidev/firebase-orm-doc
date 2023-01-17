@@ -3,9 +3,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nicholi Blogs',
+  title: 'Firebase ORM',
   tagline: 'Nicholi Jin is a senior software engineer',
-  url: 'https://blog.nicholijin.com',
+  url: 'https://nicholidev.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,12 +26,6 @@ const config = {
         docs: {
           // sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: {
-          routeBasePath: "blog",
-          showReadingTime: true,
-          blogSidebarTitle: 'Nicholi Blogs',
-          blogSidebarCount: 0,
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -43,30 +37,25 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Nicholi Blogs',
+        title: 'Firebase ORM',
         logo: {
           alt: 'Nicholi Jin Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            to: '/blog',
-            label: 'Blogs',
-            position: 'left'
-          },
-          {
             type: 'doc',
-            docId: 'intro',
+            docId: 'overview',
             position: 'left',
-            label: 'Tutorials',
+            label: 'Docs',
           },
           {
             href: 'https://nicholijin.com/',
-            label: 'Website',
+            label: 'Author',
             position: 'right',
           },
           {
-            href: 'https://github.com/nicholidev',
+            href: 'https://github.com/nicholidev/firebase-orm',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,7 +68,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/overview',
               },
             ],
           },
@@ -88,7 +77,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/overview',
               },
             ],
           },
@@ -122,17 +111,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
-  plugins: [
-      [
-        "./plugins/blog-plugin",
-        {
-          id: "blog",
-          routeBasePath: "blog",
-          path: "./blog",
-        },
-      ]
-  ]
 };
 
 module.exports = config;

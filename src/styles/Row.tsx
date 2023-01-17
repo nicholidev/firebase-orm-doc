@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   grid-gap: 32px;
+  justify-content: center;
 `
 
 export default Row

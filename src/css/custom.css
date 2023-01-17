@@ -11,6 +11,12 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Roboto Mono';
+  --ifm-color-btn-bg: #1d5435;
+  --ifm-color-btn-border: #1d5435;
+  --ifm-color-btn-color: #ffffff;
+  --ifm-background-color: #fefefe;
+  --ifm-action-title: #0f0f0f;
+  --ifm-action-subtitle: #3f3f3f;
 }
 
 [data-theme='dark'] {
@@ -23,6 +29,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-family-base: 'Roboto Mono';
+  --ifm-color-btn-bg: #ffcb2b;
+  --ifm-color-btn-border: #ffcb2b;
+  --ifm-color-btn-color: #000000;
+  --ifm-action-title: #f0f0f0;
+  --ifm-action-subtitle: #afafaf;
 }
 
 .footer__copyright{
